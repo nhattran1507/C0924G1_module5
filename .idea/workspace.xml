@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="759933ac-b10d-415e-8284-085d5d3624d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bai1/baitap1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai1/baitap2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai1/baitap3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +56,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Codegym\C0924G1_module5\bai1" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -72,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740015041291</updated>
-      <workItem from="1740015042050" duration="309000" />
+      <workItem from="1740015042050" duration="1946000" />
     </task>
     <servers />
   </component>
