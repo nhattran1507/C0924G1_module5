@@ -17,15 +17,25 @@ const AddBook = () => {
     });
 
     const handleSubmit = async (values, { setSubmitting }) => {
-        const result = await addBook(values);
-        setSubmitting(false);
-        if (result) {
-            toast.success("Book added successfully");
-            navigate("/");
-        } else {
-            alert("Failed to add book");
+        console.log("Submitting data:", values); // Kiểm tra dữ liệu gửi đi
+        try {
+            const result = await addBook(values);
+            console.log("API Response:", result); // Kiểm tra phản hồi từ API
+            setSubmitting(false);
+
+            if (result) {
+                toast.success("Book added successfully");
+                navigate("/");
+            } else {
+                console.error("API response is false or undefined");
+                alert("Failed to add book");
+            }
+        } catch (error) {
+            console.error("Error adding book:", error);
+            alert("Failed to add book due to error");
         }
     };
+
 
     return (
         <div>

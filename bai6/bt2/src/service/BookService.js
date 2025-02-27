@@ -11,15 +11,22 @@ const getBook= async ()=>{
     }
 }
 
-const addBook = async (books)=>{
-    try{
-        const result = await axios.post("http://localhost:8080/books",books);
-        return result.data
-    }catch(err){
-        console.error("Error adding books:", err.message);
+const addBook = async (books) => {
+    try {
+        console.log("Sending request to API:", books);
+        const result = await axios.post("http://localhost:8080/books", books);
+        console.log("Response from API:", result.data);
+        return result.data;
+    } catch (err) {
+        if (err.response) {
+            console.error("API Error:", err.response.data);
+            console.error("Status Code:", err.response.status);
+        } else {
+            console.error("Network Error:", err.message);
+        }
         return false;
     }
-}
+};
 
 const updateBook = async (id,books)=>{
     try{
